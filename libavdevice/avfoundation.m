@@ -201,7 +201,7 @@ static void unlock_frames(AVFContext* ctx)
                         change:(NSDictionary *)change
                        context:(void *)context {
     if (context == _context) {
-#if !TARGET_OS_IPHONE && __MAC_OS_X_VERSION_MIN_REQUIRED >= 1070
+#if !TARGET_OS_IPHONE && __MAC_OS_X_VERSION_MIN_REQUIRED >= 1080
         AVCaptureDeviceTransportControlsPlaybackMode mode =
             [change[NSKeyValueChangeNewKey] integerValue];
 
